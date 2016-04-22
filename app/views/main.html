@@ -1,0 +1,51 @@
+<div class="container">
+  <h2>Students</h2>
+  <!--student table-->
+  <div class="table-responsive">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Unique ID</th>
+          <th>Grade Level</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="student in students">
+          <td>{{ student.id }}</td>
+          <td>{{ student.grade }}</td>
+          <td>{{ student.firstName }}</td>
+          <td>{{ student.lastName }}</td>
+          <td>{{ student.email }}</td>
+          <td><button class="btn btn-danger pull-right" ng-click="removeStudent($index)" aria-label="Remove">X</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <!-- Add Students -->
+  <form role="form" class="form-horizontal" ng-submit="addStudent()">
+    <div class="form-group">
+      <label class="control-label">Unique ID</label>
+      <input type="text" ng-model="student.id" placeholder="Unique ID" class="form-control">
+      <label class="control-label">Grade Level</label><br>
+      <input type="radio" ng-model="student.grade" value="K-8">K-8
+      <input type="radio" ng-model="student.grade" value="HS">HS<br>
+      <label class="control-label">First Name</label>
+      <input type="text" ng-model="student.firstName" placeholder="First Name" class="form-control">
+      <label class="control-label">Last Name</label>
+      <input type="text" ng-model="student.lastName" placeholder="Last Name" class="form-control">
+      <label class="control-label">Email</label>
+      <input type="text" ng-model="student.email" placeholder="Email" class="form-control">
+      <br>
+      <span class="input-group-btn">
+          <input type="submit" class="btn btn-primary pull-right" value="Add">
+        </span>
+    </div>
+  </form>
+
+</div>
