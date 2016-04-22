@@ -2,7 +2,7 @@
 
 angular
   .module('claseApp', [
-    'ngRoute', 'LocalStorageModule'
+    'ngRoute', 'LocalStorageModule', 'angularCSS'
   ])
   .config(['localStorageServiceProvider', function (localStorageServiceProvider) {
     localStorageServiceProvider.setPrefix('ls');
@@ -18,12 +18,14 @@ angular
       .when('/k-8', {
         templateUrl: 'views/k-8.html',
         controller: 'MainCtrl',
-        controllerAs: 'main'
+        controllerAs: 'main',
+        css: 'styles/k-8.css'
       })
       .when('/high-school', {
         templateUrl: 'views/high-school.html',
         controller: 'MainCtrl',
-        controllerAs: 'main'
+        controllerAs: 'main',
+        css: 'styles/hs.css'
       })
       .otherwise({
         redirectTo: '/'

@@ -1,6 +1,9 @@
 <div class="container">
   <h2>All Students</h2>
   <!--student table-->
+  <input type="text" class="form-control" placeholder="Search" ng-model="search" />
+  <span class="input-group-btn">
+</span>
   <div class="table-responsive">
     <table class="table">
       <thead>
@@ -26,7 +29,7 @@
     </table>
   </div>
 
-<h2>Add a Student</h2>
+  <h2>Add a Student</h2>
   <!-- Add Students -->
   <form role="form" class="form-horizontal" ng-submit="addStudent()">
     <div class="form-group">
