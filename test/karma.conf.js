@@ -1,5 +1,9 @@
 // Karma configuration
+<<<<<<< HEAD
 // Generated on 2016-04-21
+=======
+// Generated on 2016-04-18
+>>>>>>> 0d9df87de223cb6510875f39d99f1d4a11c45e8c
 
 module.exports = function(config) {
   'use strict';
@@ -24,6 +28,10 @@ module.exports = function(config) {
       'bower_components/angular/angular.js',
       'bower_components/bootstrap/dist/js/bootstrap.js',
       'bower_components/angular-route/angular-route.js',
+<<<<<<< HEAD
+=======
+      'bower_components/angular-local-storage/dist/angular-local-storage.js',
+>>>>>>> 0d9df87de223cb6510875f39d99f1d4a11c45e8c
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       'app/scripts/**/*.js',

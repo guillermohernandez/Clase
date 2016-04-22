@@ -36,6 +36,7 @@ o The list of students should be filtered by the students grade level
 
 ## Demo
 
+<<<<<<< HEAD
 ## Build & development
 
 Run `grunt` for building and `grunt serve` for preview.
@@ -43,6 +44,8 @@ Run `grunt` for building and `grunt serve` for preview.
 ## Testing
 
 Running `grunt test` will run the unit tests with karma.
+=======
+>>>>>>> 0d9df87de223cb6510875f39d99f1d4a11c45e8c
 
 ## Contact
 #### Guillermo Hernandez Jr

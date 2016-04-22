@@ -1,5 +1,6 @@
 <div class="container">
   <h2>Students</h2>
+<<<<<<< HEAD
   <!--student table-->
   <div class="table-responsive">
     <table class="table">
@@ -27,10 +28,21 @@
   </div>
 
 
+=======
+
+  <!-- List Students -->
+  <ul class="list-group" ng-repeat="student in students">
+    <li class="list-group-item">{{ students.id }} {{ students.grade }} {{ students.first_name }} {{ students.last_name }} {{ students.email }}</li>
+    <span class="input-group-btn">
+    <button class="btn btn-danger pull-right" ng-click="removeStudent($index)" aria-label="Remove">X</button>
+  </span>
+  </ul>
+>>>>>>> 0d9df87de223cb6510875f39d99f1d4a11c45e8c
   <!-- Add Students -->
   <form role="form" class="form-horizontal" ng-submit="addStudent()">
     <div class="form-group">
       <label class="control-label">Unique ID</label>
+<<<<<<< HEAD
       <input type="text" ng-model="student.id" placeholder="Unique ID" class="form-control">
       <label class="control-label">Grade Level</label><br>
       <input type="radio" ng-model="student.grade" value="K-8">K-8
@@ -41,6 +53,17 @@
       <input type="text" ng-model="student.lastName" placeholder="Last Name" class="form-control">
       <label class="control-label">Email</label>
       <input type="text" ng-model="student.email" placeholder="Email" class="form-control">
+=======
+      <input type="text" ng-model="students.id" placeholder="Unique ID" class="form-control">
+      <label class="control-label">Grade Level</label>
+      <input type="text" ng-model="students.grade" placeholder="Grade Level" class="form-control">
+      <label class="control-label">First Name</label>
+      <input type="text" ng-model="students.first_name" placeholder="First Name" class="form-control">
+      <label class="control-label">Last Name</label>
+      <input type="text" ng-model="students.last_name" placeholder="Last Name" class="form-control">
+      <label class="control-label">Email</label>
+      <input type="text" ng-model="students.email" placeholder="Email" class="form-control">
+>>>>>>> 0d9df87de223cb6510875f39d99f1d4a11c45e8c
       <br>
       <span class="input-group-btn">
           <input type="submit" class="btn btn-primary pull-right" value="Add">
