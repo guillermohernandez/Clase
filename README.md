@@ -35,7 +35,7 @@ o The entire theming of the page should be different between the two
 o The list of students should be filtered by the students grade level
 
 ## Demo
-
+http://guillermohernandez.github.io/Clase/
 
 ## Build & development
 
