@@ -5,7 +5,7 @@
     "angular": "^1.4.0",
     "bootstrap": "^3.2.0",
     "angular-route": "^1.4.0",
-    "font-awesome": "fontawesome#^4.6.1",
+    "font-awesome": "fontawesome#^4.6.3",
     "angular-local-storage": "^0.2.7",
     "angular-css": "^1.0.8"
   },

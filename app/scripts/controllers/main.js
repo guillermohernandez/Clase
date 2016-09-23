@@ -2,30 +2,6 @@
 
 angular.module('claseApp')
   .controller('MainCtrl', function ($scope, localStorageService) {
-    // $scope.students = [{
-    //   id: "1",
-    //   grade: "HS",
-    //   firstName: "Albert",
-    //   lastName: "Learninstein",
-    //   email: "al@equals.org"
-
-    // },
-    //   {
-    //     id: "2",
-    //     grade: "HS",
-    //     firstName: "Scott",
-    //     lastName: "Pilgrim",
-    //     email: "spill@comic.edu"
-
-    //   },
-    //   {
-    //     id: "7",
-    //     grade: "K-8",
-    //     firstName: "Thames",
-    //     lastName: "Bond",
-    //     email: "skyfall@hotmail.com"
-
-    //   }];
 
     var studentsInStore = localStorageService.get('students');
 
