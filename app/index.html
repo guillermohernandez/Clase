@@ -16,29 +16,30 @@
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
   <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
 </head>
 
 <body ng-app="claseApp">
 
   <div class="container">
     <nav>
-      <div class="nav-wrapper">
+      <div class="nav-wrapper default-primary-color">
+        <!--<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>-->
         <div class="row">
           <div class="col s6">
             <form>
               <div class="input-field">
-                <input id="search" type="search" />
+                <input id="search" type="search" placeholder="Search students" ng-model="search" />
                 <label for="search"><i class="material-icons">search</i></label>
               </div>
             </form>
           </div>
           <div class="col s6">
-            <ul class="right">
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
               <li><a href="#/">Home</a></li>
-              <li><a ng-href="#/k-8">K-8</a><i class="material-icons left">view_list</i>K-8</a>
+              <li><a ng-href="#/k-8"><i class="material-icons left">view_list</i>K-8</a>
               </li>
-              <li><a ng-href="#/high-school">High School</a><i class="material-icons left">view_list</i>High School</a>
+              <li><a ng-href="#/high-school"><i class="material-icons left">view_list</i>High School</a>
               </li>
             </ul>
           </div>
@@ -49,13 +50,20 @@
     <div ng-view=""></div>
   </div>
 
-  <div class="footer">
+  <footer class="page-footer text-primary-color">
     <div class="container">
-      <p class="text-muted text-center">Created by <a href="http://memohernandez.com">Guillermo Hernandez Jr</a> &nbsp; <i class="fa fa-github fa-2x"></i>&nbsp;
-        <a href="https://github.com/guillermohernandez/Clase">View Repository on GitHub</a></p>
+      <div class="row">
+        <div class="col s12">
+        </div>
+      </div>
     </div>
-  </div>
-
+    <div class="footer">
+      <div class="container">
+        <p class="center-align">Created by <a href="http://memohernandez.com">Guillermo Hernandez Jr</a> &nbsp; <i class="fa fa-github fa-2x"></i>&nbsp;
+          <a href="https://github.com/guillermohernandez/Clase">View Repository on GitHub</a></p>
+      </div>
+    </div>
+  </footer>
 
   <!-- build:js(.) scripts/vendor.js -->
   <!-- bower:js -->

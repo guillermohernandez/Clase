@@ -1,17 +1,14 @@
 <!-- Content -->
-<div class="container">
-
   <div class="row">
 
     <!-- Left Column -->
-    <div class="col-md-8">
+    <div class="col s12 m8">
 
-      <h1 class="page-header">
+      <h1>
         All Students
       </h1>
       <!--student table-->
-      <div class="table-responsive">
-        <table class="table">
+        <table class="responsive-table striped">
           <thead>
             <tr>
               <th>Unique ID</th>
@@ -28,35 +25,42 @@
               <td>{{ student.grade }}</td>
               <td>{{ student.firstName }}</td>
               <td>{{ student.lastName }}</td>
-              <td>{{ student.email }}</td>
-              <td><button class="btn btn-danger" ng-click="removeStudent($index)" aria-label="Remove"><i class="fa fa-eraser fa-lg" aria-hidden="true"></i> Remove</button></td>
+              <td>{{ student.email }}</td>        
+              <td><a class="waves-effect waves-light btn" ng-click="removeStudent($index)" aria-label="Remove"><i class="material-icons left">delete</i>Remove</a></td>
             </tr>
           </tbody>
         </table>
-      </div>
-      <hr>
     </div>
 
     <!-- Right Sidebar -->
-    <div class="col-md-4">
+    <div class="col s12 m4">
 
       <!-- Search Students-->
-      <div class="well">
+      <!--<div class="well">
         <h2>Search Students</h2>
         <input type="text" class="form-control" placeholder="Search" ng-model="search" />
-      </div>
+      </div>-->
 
 
       <!-- Add Students -->
       <div class="well">
-        <h2>Add a Student</h2>
+        <h1>Add a Student</h1>
         <form role="form" class="form-horizontal" ng-submit="addStudent()">
           <div class="form-group">
             <label class="control-label">Unique ID</label>
             <input type="text" ng-model="student.id" placeholder="Unique ID" class="form-control">
             <label class="control-label">Grade Level</label><br>
-            <input type="radio" ng-model="student.grade" value="K-8">K-8<br>
-            <input type="radio" ng-model="student.grade" value="HS">HS<br>
+            <p>
+      <input class="with-gap" name="grade" type="radio" id="K8" ng-model="student.grade" value="K-8" />
+      <label for="K8">K-8</label>
+            </p>
+
+            <p>
+      <input class="with-gap" name="grade" type="radio" id="HS" ng-model="student.grade" value="HS"  />
+      <label for="HS">HS</label>
+            </p>
+            <!--<input type="radio" ng-model="student.grade" value="K-8">K-8<br>
+            <input type="radio" ng-model="student.grade" value="HS">HS<br>-->
             <label class="control-label">First Name</label>
             <input type="text" ng-model="student.firstName" placeholder="First Name" class="form-control">
             <label class="control-label">Last Name</label>
@@ -75,8 +79,5 @@
 
   </div>
   <!-- /.row -->
-
-  <hr>
-
-</div>
+  <div class="divider"></div>
 <!-- /.container -->
