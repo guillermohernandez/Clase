@@ -1,83 +1,84 @@
 <!-- Content -->
-  <div class="row">
+<div class="row">
 
-    <!-- Left Column -->
-    <div class="col s12 m8">
+  <!-- Left Column -->
+  <div class="col s12 m8">
 
-      <h1>
-        All Students
-      </h1>
-      <!--student table-->
-        <table class="responsive-table striped">
-          <thead>
-            <tr>
-              <th>Unique ID</th>
-              <th>Grade Level</th>
-              <th>First Name</th>
-              <th>Last Name</th>
-              <th>Email</th>
-              <th>&nbsp;</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr ng-repeat="student in students | filter:search">
-              <td>{{ student.id }}</td>
-              <td>{{ student.grade }}</td>
-              <td>{{ student.firstName }}</td>
-              <td>{{ student.lastName }}</td>
-              <td>{{ student.email }}</td>        
-              <td><a class="waves-effect waves-light btn" ng-click="removeStudent($index)" aria-label="Remove"><i class="material-icons left">delete</i>Remove</a></td>
-            </tr>
-          </tbody>
-        </table>
-    </div>
-
-    <!-- Right Sidebar -->
-    <div class="col s12 m4">
-
-      <!-- Search Students-->
-      <!--<div class="well">
-        <h2>Search Students</h2>
-        <input type="text" class="form-control" placeholder="Search" ng-model="search" />
-      </div>-->
-
-
-      <!-- Add Students -->
-      <div class="well">
-        <h1>Add a Student</h1>
-        <form role="form" class="form-horizontal" ng-submit="addStudent()">
-          <div class="form-group">
-            <label class="control-label">Unique ID</label>
-            <input type="text" ng-model="student.id" placeholder="Unique ID" class="form-control">
-            <label class="control-label">Grade Level</label><br>
-            <p>
-      <input class="with-gap" name="grade" type="radio" id="K8" ng-model="student.grade" value="K-8" />
-      <label for="K8">K-8</label>
-            </p>
-
-            <p>
-      <input class="with-gap" name="grade" type="radio" id="HS" ng-model="student.grade" value="HS"  />
-      <label for="HS">HS</label>
-            </p>
-            <!--<input type="radio" ng-model="student.grade" value="K-8">K-8<br>
-            <input type="radio" ng-model="student.grade" value="HS">HS<br>-->
-            <label class="control-label">First Name</label>
-            <input type="text" ng-model="student.firstName" placeholder="First Name" class="form-control">
-            <label class="control-label">Last Name</label>
-            <input type="text" ng-model="student.lastName" placeholder="Last Name" class="form-control">
-            <label class="control-label">Email</label>
-            <input type="email" ng-model="student.email" placeholder="Email" class="form-control">
-            <br>
-            <span class="input-group-btn">
-          <input type="submit" class="btn btn-primary pull-right" aria-label="Remove" value="Add">
-        </span>
-          </div>
-        </form>
-      </div>
-
-    </div>
-
+    <h1>
+      All Students
+    </h1>
+    <!--student table-->
+    <table class="responsive-table striped">
+      <thead>
+        <tr>
+          <th>Unique ID</th>
+          <th>Grade Level</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+          <th>&nbsp;</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="student in students | filter:search">
+          <td>{{ student.id }}</td>
+          <td>{{ student.grade }}</td>
+          <td>{{ student.firstName }}</td>
+          <td>{{ student.lastName }}</td>
+          <td>{{ student.email }}</td>
+          <td><a class="waves-effect waves-light btn" ng-click="removeStudent($index)" aria-label="Remove"><i class="material-icons left">delete</i>Remove</a></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
-  <!-- /.row -->
-  <div class="divider"></div>
+
+  <!-- Right Sidebar -->
+  <div class="col s12 m4">
+
+    <!-- Add Students -->
+    <div class="card-panel">
+      <h2>Add a Student</h2>
+      <form role="form" ng-submit="addStudent()">
+
+
+        <div class="input-field col s12">
+          <input id="id" type="text" ng-model="student.id" placeholder="Unique ID" class="validate">
+          <label for="id">Unique ID</label>
+        </div>
+
+        <label class="control-label">Grade Level</label><br>
+        <p>
+          <input class="with-gap" name="grade" type="radio" id="K8" ng-model="student.grade" value="K-8" />
+          <label for="K8">K-8</label>
+        </p>
+
+        <p>
+          <input class="with-gap" name="grade" type="radio" id="HS" ng-model="student.grade" value="HS" />
+          <label for="HS">HS</label>
+        </p>
+
+        <div class="input-field col s12">
+          <input id="first_name" type="text" ng-model="student.firstName" placeholder="First Name" class="validate">
+          <label for="first_name">First Name</label>
+        </div>
+
+        <div class="input-field col s12">
+          <input id="last_name" type="text" ng-model="student.lastName" placeholder="Last Name" class="validate">
+          <label for="last_name">Last Name</label>
+        </div>
+
+        <div class="input-field col s12">
+          <input id="email" type="email" ng-model="student.email" placeholder="Email" class="validate">
+          <label for="email">Email</label>
+        </div>
+        <br>
+        <div class="card-action right-align">
+          <button class="btn waves-effect waves-light" type="submit" name="action" aria-label="Add" value="Add">Add<i class="material-icons right">add</i></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- /.row -->
+<div class="divider"></div>
 <!-- /.container -->
