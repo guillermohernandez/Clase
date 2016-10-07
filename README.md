@@ -3,6 +3,8 @@ Clase
 
 Create a webpage that manages a school classroom. Built in AngularJS with Materialize CSS
 
+[![alt text](Clase/Clase Student Management.png)]
+
 ## Todo
 
 - [ ] Recreate Demo
