@@ -1,6 +1,13 @@
 Clase
 ======
-Create a webpage that manages a school classroom.
+
+Create a webpage that manages a school classroom. Built in AngularJS with Materialize CSS
+
+## Todo
+
+- [ ] Recreate Demo
+- [ ] Add edit student function
+- [ ] Generate unique ID randomly
 
 ## User Stories
 
