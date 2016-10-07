@@ -1,9 +1,9 @@
-<div class="container">
-    <h1>High School Students</h1>
-    <!--student table-->
-    <input type="text" class="form-control" placeholder="Search" ng-model="search" />
-    <span class="input-group-btn">
-</span>
+<div class="row">
+    <div class="col s12">
+
+        <h1>High School Students</h1>
+        <!--student table-->
+
         <table class="responsive-table striped">
             <thead>
                 <tr>
@@ -22,7 +22,10 @@
                     <td>{{ student.firstName }}</td>
                     <td>{{ student.lastName }}</td>
                     <td>{{ student.email }}</td>
-                    <td><button class="btn btn-danger pull-right" ng-click="removeStudent($index)" aria-label="Remove">X</button></td>
+                    <td><a class="waves-effect waves-light btn" ng-click="removeStudent($index)" aria-label="Remove"><i class="material-icons left">delete</i>Remove</a></td>
                 </tr>
             </tbody>
         </table>
+
+    </div>
+</div>
