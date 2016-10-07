@@ -3,7 +3,7 @@ Clase
 
 Create a webpage that manages a school classroom. Built in AngularJS with Materialize CSS
 
-[![alt text](Clase/Clase Student Management.png)]
+[![Clase app screenshot](https://raw.githubusercontent.com/guillermohernandez/Clase/master/Clase%20%20%20Student%20Management.png)]
 
 ## Todo
 
