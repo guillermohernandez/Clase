@@ -1,10 +1,3 @@
-// Karma configuration
-<<<<<<< HEAD
-// Generated on 2016-04-21
-=======
-// Generated on 2016-04-18
->>>>>>> 0d9df87de223cb6510875f39d99f1d4a11c45e8c
-
 module.exports = function(config) {
   'use strict';
 

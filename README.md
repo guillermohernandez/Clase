@@ -7,7 +7,7 @@ Create a webpage that manages a school classroom. Built in AngularJS with Materi
 
 ## Todo
 
-- [ ] Recreate Demo
+- [x] Recreate Demo
 - [ ] Add edit student function
 - [ ] Generate unique ID randomly
 
@@ -44,7 +44,7 @@ o The entire theming of the page should be different between the two
 o The list of students should be filtered by the students grade level
 
 ## Demo
-
+https://guillermohernandez.github.io/Clase/
 
 ## Build & development
 
