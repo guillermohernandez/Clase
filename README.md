@@ -10,6 +10,7 @@ Create a webpage that manages a school classroom. Built in AngularJS with Materi
 - [x] Recreate Demo
 - [ ] Add edit student function
 - [ ] Generate unique ID randomly
+- [ ] Look into broken filtering by grade, possibly router file
 
 ## User Stories
 

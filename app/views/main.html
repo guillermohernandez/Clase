@@ -3,10 +3,7 @@
 
   <!-- Left Column -->
   <div class="col s12 m8">
-
-    <h1>
-      All Students
-    </h1>
+    <h2>All Students</h2>
     <!--student table-->
     <table class="responsive-table striped">
       <thead>
@@ -26,7 +23,7 @@
           <td>{{ student.firstName }}</td>
           <td>{{ student.lastName }}</td>
           <td>{{ student.email }}</td>
-          <td><a class="waves-effect waves-light btn" ng-click="removeStudent($index)" aria-label="Remove"><i class="material-icons left">delete</i>Remove</a></td>
+          <td><a class="waves-effect waves-light btn" ng-click="removeStudent($index)" aria-label="Remove"><i class="material-icons right">delete</i>Remove Student</a></td>
         </tr>
       </tbody>
     </table>
@@ -37,7 +34,7 @@
 
     <!-- Add Students -->
     <div class="card-panel">
-      <h2>Add a Student</h2>
+      <h3>Enroll a Student</h3>
       <form role="form" ng-submit="addStudent()">
 
         <div class="input-field col s12">
